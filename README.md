@@ -1,0 +1,1 @@
+# Eingebettete Systeme Projekt: Solarkiste
