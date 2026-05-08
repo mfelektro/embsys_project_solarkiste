@@ -48,6 +48,9 @@ Der ESP32 soll mit dem WLAN verbunden werden können und per MQTT in ein Smart-H
 ### Webinterface
 Falls kein Smart-Home zur Verfügung steht, soll ein kleines Webinterface als Anzeigemöglichkeit für die gemessenen Werte (Strom, Spannung, Leistung, SOC, usw.) und Ansteuerung der Ausgänge, sowie Einstellung der Lüfter-Parameter dienen.
 
+## Projektübersicht
+<img src="pictures/00_project-overview_bg.png" alt="Projektübersicht" height="600">
+
 ## Bilder der Komponenten
 #### Photovoltaikmodul
 <img src="pictures/01_solarpanel.jpg" alt="Photovoltaikmodul" height="400">
