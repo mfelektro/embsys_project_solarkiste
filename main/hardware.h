@@ -18,4 +18,7 @@
 extern volatile bool isr_handle_change;
 
 void configure_gpios(void);
+void configure_i2c(void);
 void set_relais_status(uint32_t gpio_num, bool state);
+
+float read_ads1115_voltage(void);

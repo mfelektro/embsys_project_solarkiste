@@ -9,11 +9,14 @@
 void app_main(void)
 {
 
-    printf("Testing Interrupt...\n\n");
+    printf("Testing...\n\n");
     configure_gpios();
+    configure_i2c();
 
+    /*
     bool relais_state = false;
 
+    
     while(1){
 
         bool interrupt_last_state = isr_handle_change;
@@ -26,5 +29,12 @@ void app_main(void)
             set_relais_status(PIN_RELAIS_1, relais_state);
             printf("Interrupt triggered!, Relais-State: %d\n", relais_state);
         }
+    }
+    */
+    while(1){
+
+        float voltage_value = read_ads1115_voltage();
+        printf("Spannung an A0: %f\n", voltage_value);
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
